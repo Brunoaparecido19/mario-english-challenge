@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/mediaQuery.css">
+    <link rel="shortcut icon" href="./assets/icone.png" type="image/x-icon">
+    <title>Super Mario English Challenge</title>
 </head>
 
 <body>
     <div class="container">
         <header class="main-header">
             <div class="game-score">
-                <img src="./assets/moeda.png" height="25px" alt="0">
-                Moedas:0
+                <img class="coin" src="./assets/moeda.png" height="25px" alt="0">
+                Moedas: &nbsp; <span id="current-score">0</span>
             </div>
             <div class="game-name">
                 <!-- Pra Este Projeto Eu Gerei Essa Img no https://fontmeme.com/pt/fonte-de-super-mario/
@@ -24,18 +26,23 @@
         </header>
         <section class="game-body">
             <div class="left-body">
-                <h3>FALE O NOME DA COR EM INGLÊS</h3>
-                <span>Yellow</span>
+                <h3 class="title">FALE O NOME DA COR EM INGLÊS</h3>
+                <span id="color-name" class="title"></span>
                 <div class="current-color">
 
                 </div>
-                <button class="reply-btn" onclick="">Responder</button>
+                <button class="reply-btn">Responder</button>
             </div>
             <div class="right-body">
-
+                <img class="mario" src="./assets/mario.png" height="400px">
             </div>
         </section>
+        <footer class="baseboard">
+            <img src="./assets/logo-dio.png" height="100px">
+        </footer>
     </div>
+
+    <script src="./scripts/interface.js"></script>
 </body>
 
 </html>
