@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,600&display=swap');
+
+:root {
+    --font-score: 'Tourney', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b30000;
+}
+
+.main-header {
+    background-color: #dddddd;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-score {
+    background-color: #1f8ad6;
+    border-radius: 30px;
+    padding: 5px 50px 35px;
+    color: white;
+    height: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    font-family: var(--font-score);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game-score img {
+    margin-right: 15px;
+}
+
+.game-name {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.title-img {
+    width: 100%;
+}
+
+.left-body {
+    color: white;
+}
+
+.current-color {
+    height: 250px;
+    width: 250px;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+
+.reply-btn{
+    background-color: transparent;
+}
